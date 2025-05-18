@@ -1,1 +1,9 @@
 @use "tailwindcss";
+
+@use 'shame';
+
+@plugin "@tailwindcss/forms";
+@plugin "@tailwindcss/typography";
+
+@plugin "daisyui";
+
