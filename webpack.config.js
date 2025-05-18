@@ -5,7 +5,7 @@ module.exports = {
     entry: './src/js/main.js',
     output: {
         filename: 'bundle.js',
-        path: path.resolve(__dirname, 'web/build/js'),
+        path: path.resolve(__dirname, 'web/static/js'),
     },
 
     module: {
@@ -21,6 +21,20 @@ module.exports = {
                 }
             },
             {
+                test: /\.(woff|woff2|eot|ttf|otf)$/,
+                type: 'asset/resource',
+                generator: {
+                    filename: '../fonts/[name][ext]',
+                } 
+            },
+            {
+                test: /\.(png|jpg|gif|svg)$/,
+                loader: 'file-loader',
+                options: {
+                    outputPath: 'static/images/',
+                },
+            },
+            {
                 test: /\.scss$/,
                 use: [
                     MiniCssExtractPlugin.loader,
@@ -28,13 +42,6 @@ module.exports = {
                     'postcss-loader',
                     'sass-loader',
                 ]
-            },
-            {
-                test: /\.(woff|woff2|eot|ttf|otf)$/,
-                type: 'asset/resource',
-                generator: {
-                    filename: '../fonts/[name][ext]',
-                } 
             },
         ]
     },
