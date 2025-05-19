@@ -2,7 +2,9 @@
 
 @use "tailwindcss";
 
-@use 'shame';
+@use "variables/variables";
+@use "typography/index";
+@use "shame";
 
 @plugin "@tailwindcss/forms";
 @plugin "@tailwindcss/typography";
