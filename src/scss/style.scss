@@ -3,7 +3,8 @@
 @use "tailwindcss";
 
 @use "variables/variables";
-@use "typography/index";
+@use "components/components";
+@use "typography/typography";
 @use "shame";
 
 @plugin "@tailwindcss/forms";
