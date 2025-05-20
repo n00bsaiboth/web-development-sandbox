@@ -27,13 +27,13 @@ module.exports = {
                     filename: '../fonts/[name][ext]',
                 } 
             },
-            {
-                test: /\.(png|jpg|gif|svg)$/,
-                loader: 'file-loader',
-                options: {
-                    outputPath: 'static/images/',
-                },
-            },
+            // {
+            //     test: /\.(png|jpg|gif|svg)$/,
+            //     loader: 'file-loader',
+            //     options: {
+            //         outputPath: 'static/images/',
+            //     },
+            // },
             {
                 test: /\.scss$/,
                 use: [
