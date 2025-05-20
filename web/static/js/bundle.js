@@ -16,7 +16,17 @@
   \************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scss_style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../scss/style.scss */ \"./src/scss/style.scss\");\n\n\n\nvar helloWebpack = function helloWebpack(name) {\n  console.log(\"Hello from \".concat(name, \"!\"));\n};\nhelloWebpack('Webpack and Babel');\n\n//# sourceURL=webpack://icons-to-fonts/./src/js/main.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scss_style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../scss/style.scss */ \"./src/scss/style.scss\");\n/* harmony import */ var _modules_navigations__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/navigations */ \"./src/js/modules/navigations.js\");\n\n\n\n\ndocument.addEventListener('DOMContentLoaded', function () {\n  (0,_modules_navigations__WEBPACK_IMPORTED_MODULE_1__.toggleMenu)();\n});\nvar helloWebpack = function helloWebpack(name) {\n  console.log(\"Hello from \".concat(name, \"!\"));\n};\nhelloWebpack('Webpack and Babel');\n\n//# sourceURL=webpack://icons-to-fonts/./src/js/main.js?");
+
+/***/ }),
+
+/***/ "./src/js/modules/navigations.js":
+/*!***************************************!*\
+  !*** ./src/js/modules/navigations.js ***!
+  \***************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   toggleMenu: () => (/* binding */ toggleMenu)\n/* harmony export */ });\n\n\nvar toggleMenu = function toggleMenu() {\n  var btn = document.querySelector('[data-collapse-toggle]');\n  var menu = document.getElementById(btn.getAttribute('data-collapse-toggle'));\n  btn.addEventListener('click', function () {\n    menu.classList.toggle('hidden');\n    btn.setAttribute('aria-expanded', menu.classList.contains('hidden') ? 'false' : 'true');\n  });\n};\n\n\n//# sourceURL=webpack://icons-to-fonts/./src/js/modules/navigations.js?");
 
 /***/ }),
 
@@ -57,6 +67,23 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 /******/ 	}
 /******/ 	
 /************************************************************************/
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	(() => {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = (exports, definition) => {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
+/******/ 	(() => {
+/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/make namespace object */
 /******/ 	(() => {
 /******/ 		// define __esModule on exports
