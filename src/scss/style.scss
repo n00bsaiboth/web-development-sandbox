@@ -2,9 +2,12 @@
 
 @use "tailwindcss";
 
+@use "base/base";
 @use "variables/variables";
-@use "components/components";
 @use "typography/typography";
+@use "components/components";
+@use "layout/layout";
+
 @use "shame";
 
 @plugin "@tailwindcss/forms";
