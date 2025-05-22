@@ -1,0 +1,15 @@
+/**
+ * Enable smooth scroll
+ */
+
+html {
+    @apply scroll-smooth;
+}
+
+/**
+ * Prevent jumpy pages
+ */
+
+body {
+    overflow-y: scroll;
+}
