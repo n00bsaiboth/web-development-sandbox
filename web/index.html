@@ -8,6 +8,9 @@
     <link rel="shortcut icon" type="image/x-icon" href="static/images/favicon/favicon.ico">
 </head>
 <body class="min-h-screen flex flex-col bg-gray-50 text-gray-900">
+
+  <button id="back-to-top-button" title="Go to top">Top</button>
+  
   <nav class="border-gray-700">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
       <div class="site-branding">
@@ -35,7 +38,7 @@
       <div class="hidden w-full md:block md:w-auto" id="navbar-default">
         <ul class="font-medium text-base md:text-lg flex flex-col p-4 md:p-0 mt-4 border border-gray-700 rounded-lg bg-base-200 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-[2px] md:border-0 md:bg-transparent">
           <li>
-            <a href="#" class="block px-3 py-1 md:py-0 text-yellow-400 bg-yellow-700 rounded-sm md:bg-transparent md:p-0" aria-current="page">Home</a>
+            <a href="#back-to-top-button" class="block px-3 py-1 md:py-0 text-yellow-400 bg-yellow-700 rounded-sm md:bg-transparent md:p-0" aria-current="page">Home</a>
           </li>
           <li>
             <a href="#about" class="block px-3 py-1 md:py-0 text-yellow-400 hover:bg-yellow-700 md:hover:bg-transparent md:hover:text-yellow-500 md:p-0">About</a>
@@ -64,25 +67,69 @@
     </div>
   </header>
 
+  <!-- placeholder for breadcrumbs -->
+
   <main>
+    <section id="jumbotron">
+      <div class="bg-white dark:bg-gray-900">
+        <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16">
+            <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">Jumbotron with tailwindCSS.</h1>
+            <p class="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48 dark:text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat..</p>
+            <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
+                <a href="#" class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
+                    Get started
+                    <svg class="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                    </svg>
+                </a>
+                <a href="#" class="py-3 px-5 sm:ms-4 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">
+                    Learn more
+                </a>  
+            </div>
+        </div>
+      </div>
+    </section>
+
+
     <section id="about">
       <div class="container max-w-screen-xl mx-auto p-4">
         <h2>About</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla varius sollicitudin arcu, sit amet elementum felis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas a facilisis neque. Morbi fermentum eros neque, ac tincidunt erat lacinia gravida. Morbi faucibus massa ut metus lobortis pretium. Duis aliquam ante sed metus suscipit pharetra. Nullam lacinia metus vel ligula porttitor elementum. Suspendisse potenti. Ut placerat erat et eros gravida viverra. Quisque luctus, nisi aliquet sollicitudin sagittis, nisi elit pulvinar eros, nec aliquet purus orci in sem. Suspendisse facilisis a lorem et aliquam. Nulla facilisi. Pellentesque vitae volutpat metus, non consequat tellus. Vestibulum iaculis at enim sed facilisis. Nunc velit urna, condimentum aliquet pretium sed, laoreet ac mauris. Aenean mattis orci nec aliquet lobortis. </p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-0">
+          <div>
+            <p>image or background placeholder</p>
+          </div>
+          <div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla varius sollicitudin arcu, sit amet elementum felis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas a facilisis neque. Morbi fermentum eros neque, ac tincidunt erat lacinia gravida. Morbi faucibus massa ut metus lobortis pretium. Duis aliquam ante sed metus suscipit pharetra. Nullam lacinia metus vel ligula porttitor elementum. Suspendisse potenti. Ut placerat erat et eros gravida viverra. Quisque luctus, nisi aliquet sollicitudin sagittis, nisi elit pulvinar eros, nec aliquet purus orci in sem. Suspendisse facilisis a lorem et aliquam. Nulla facilisi. Pellentesque vitae volutpat metus, non consequat tellus. Vestibulum iaculis at enim sed facilisis. Nunc velit urna, condimentum aliquet pretium sed, laoreet ac mauris. Aenean mattis orci nec aliquet lobortis. </p>
+          </div>
+        </div>
       </div>
     </section>
 
     <section id="services">
       <div class="container max-w-screen-xl mx-auto p-4">
         <h2>Services</h2>
-        <p> Fusce fringilla felis eu tellus aliquam, vel tristique nisl rutrum. Morbi ornare massa id ex elementum, id aliquam dolor scelerisque. Fusce justo nibh, consectetur sit amet risus et, fermentum imperdiet mauris. Vestibulum ut luctus enim. Praesent id euismod quam, vitae dapibus est. Mauris consectetur cursus tellus, efficitur sagittis tortor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec lacinia id purus in lobortis. Cras malesuada magna mi, in fringilla mauris tincidunt non. </p>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-0">
+      <div>
+        <p>Fusce fringilla felis eu tellus aliquam, vel tristique nisl rutrum. Morbi ornare massa id ex elementum, id aliquam dolor scelerisque. Fusce justo nibh, consectetur sit amet risus et, fermentum imperdiet mauris. Vestibulum ut luctus enim. Praesent id euismod quam, vitae dapibus est. Mauris consectetur cursus tellus, efficitur sagittis tortor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec lacinia id purus in lobortis. Cras malesuada magna mi, in fringilla mauris tincidunt non.</p>
+      </div>
+      <div>
+        <p>image or background placeholder</p>
+      </div>
+    </div>
       </div>
     </section>
 
     <section id="pricing">
       <div class="container max-w-screen-xl mx-auto p-4">
         <h2>Pricing</h2>
-        <p>Quisque metus quam, tempor consectetur ante sed, varius auctor massa. Sed vitae risus tristique augue tincidunt tincidunt. In ut nibh malesuada, convallis tellus vel, hendrerit ex. In hac habitasse platea dictumst. Aliquam cursus vehicula dolor, non ultrices enim tincidunt non. Etiam hendrerit, quam id porttitor venenatis, ligula ipsum tincidunt tortor, at posuere est massa et sem. Morbi massa orci, molestie eu blandit vel, sodales non mauris. </p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-0">
+          <div>
+            <p>image or background placeholder</p>
+          </div>
+          <div>
+            <p>Quisque metus quam, tempor consectetur ante sed, varius auctor massa. Sed vitae risus tristique augue tincidunt tincidunt. In ut nibh malesuada, convallis tellus vel, hendrerit ex. In hac habitasse platea dictumst. Aliquam cursus vehicula dolor, non ultrices enim tincidunt non. Etiam hendrerit, quam id porttitor venenatis, ligula ipsum tincidunt tortor, at posuere est massa et sem. Morbi massa orci, molestie eu blandit vel, sodales non mauris. </p>          </div>
+          </div>
+        </div>
       </div>
     </section>
 
