@@ -5,8 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="static/css/style.css">
     <title>Landing page</title>
+    <link rel="shortcut icon" type="image/x-icon" href="static/images/favicon/favicon.ico">
 </head>
 <body class="min-h-screen flex flex-col bg-gray-50 text-gray-900">
+  <nav class="border-gray-700">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <div class="site-branding">
+        <a href="https://openinnovations.io/" class="flex items-center space-x-3 rtl:space-x-reverse">
+          <!-- <img src="static/images/icons/tailwind-css.svg" class="h-8" alt="Openinnovations.io" /> -->
+          <i class="icon icon-tailwind icon-padding-right"></i><span class="self-center text-2xl font-semibold whitespace-nowrap">Openinnovations.io</span>
+        </a>
+      </div>
+      <button 
+        data-collapse-toggle="navbar-default" 
+        type="button" 
+        class="inline-flex items-center p-2 w-10 h-10 justify-center text-yellow-400 rounded-lg md:hidden"
+        aria-controls="navbar-default" 
+        aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+          <!-- <img 
+            src="static/images/icons/main-menu.svg"
+            class="w-5 h-5"
+            aria-hidden="true"
+            alt="Main menu"
+          /> -->
+          <i class="icon icon-main-menu" aria-hidden="true"></i>
+      </button>
+      <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+        <ul class="font-medium text-base md:text-lg flex flex-col p-4 md:p-0 mt-4 border border-gray-700 rounded-lg bg-base-200 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-[2px] md:border-0 md:bg-transparent">
+          <li>
+            <a href="#" class="block px-3 py-1 md:py-0 text-yellow-400 bg-yellow-700 rounded-sm md:bg-transparent md:p-0" aria-current="page">Home</a>
+          </li>
+          <li>
+            <a href="#about" class="block px-3 py-1 md:py-0 text-yellow-400 hover:bg-yellow-700 md:hover:bg-transparent md:hover:text-yellow-500 md:p-0">About</a>
+          </li>
+          <li>
+            <a href="#services" class="block px-3 py-1 md:py-0 text-yellow-400 hover:bg-yellow-700 md:hover:bg-transparent md:hover:text-yellow-500 md:p-0">Services</a>
+          </li>
+          <li>
+            <a href="#pricing" class="block px-3 py-1 md:py-0 text-yellow-400 hover:bg-yellow-700 md:hover:bg-transparent md:hover:text-yellow-500 md:p-0">Pricing</a>
+          </li>
+          <li>
+            <a href="#contact" class="block px-3 py-1 md:py-0 text-yellow-400 hover:bg-yellow-700 md:hover:bg-transparent md:hover:text-yellow-500 md:p-0">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
   <header>
     <div class="hero-container">
       <div class="hero hero-header">
@@ -18,24 +65,70 @@
   </header>
 
   <main>
+    <section id="about">
+      <div class="container max-w-screen-xl mx-auto p-4">
+        <h2>About</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla varius sollicitudin arcu, sit amet elementum felis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas a facilisis neque. Morbi fermentum eros neque, ac tincidunt erat lacinia gravida. Morbi faucibus massa ut metus lobortis pretium. Duis aliquam ante sed metus suscipit pharetra. Nullam lacinia metus vel ligula porttitor elementum. Suspendisse potenti. Ut placerat erat et eros gravida viverra. Quisque luctus, nisi aliquet sollicitudin sagittis, nisi elit pulvinar eros, nec aliquet purus orci in sem. Suspendisse facilisis a lorem et aliquam. Nulla facilisi. Pellentesque vitae volutpat metus, non consequat tellus. Vestibulum iaculis at enim sed facilisis. Nunc velit urna, condimentum aliquet pretium sed, laoreet ac mauris. Aenean mattis orci nec aliquet lobortis. </p>
+      </div>
+    </section>
 
+    <section id="services">
+      <div class="container max-w-screen-xl mx-auto p-4">
+        <h2>Services</h2>
+        <p> Fusce fringilla felis eu tellus aliquam, vel tristique nisl rutrum. Morbi ornare massa id ex elementum, id aliquam dolor scelerisque. Fusce justo nibh, consectetur sit amet risus et, fermentum imperdiet mauris. Vestibulum ut luctus enim. Praesent id euismod quam, vitae dapibus est. Mauris consectetur cursus tellus, efficitur sagittis tortor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec lacinia id purus in lobortis. Cras malesuada magna mi, in fringilla mauris tincidunt non. </p>
+      </div>
+    </section>
+
+    <section id="pricing">
+      <div class="container max-w-screen-xl mx-auto p-4">
+        <h2>Pricing</h2>
+        <p>Quisque metus quam, tempor consectetur ante sed, varius auctor massa. Sed vitae risus tristique augue tincidunt tincidunt. In ut nibh malesuada, convallis tellus vel, hendrerit ex. In hac habitasse platea dictumst. Aliquam cursus vehicula dolor, non ultrices enim tincidunt non. Etiam hendrerit, quam id porttitor venenatis, ligula ipsum tincidunt tortor, at posuere est massa et sem. Morbi massa orci, molestie eu blandit vel, sodales non mauris. </p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container max-w-screen-xl mx-auto p-4">
+        <h2>Contact</h2>
+        <p> Nam rhoncus purus sed ex ultrices commodo. Pellentesque vulputate nulla quis tincidunt condimentum. Donec commodo massa nec consequat efficitur. Etiam eu sem pulvinar, vestibulum ligula ac, tempus orci. Quisque non suscipit mauris. Vestibulum dolor ante, mollis in mauris ultricies, placerat laoreet tellus. Aliquam justo sapien, viverra sit amet molestie id, aliquet ac tortor. Suspendisse gravida tortor sit amet consectetur imperdiet. Pellentesque varius ultricies augue, ac ultrices eros semper at. Praesent faucibus sit amet elit eget mollis. Maecenas at interdum felis. Suspendisse non malesuada eros, in sodales ante. Cras quis semper sem. </p>
+      </div>
+    </section>
   </main>
 
   <footer class="">
-    <div class="container max-w-screen-xl mx-auto">
-      <div class="grid grid-cols-3 gap-4">
+    <div class="container max-w-screen-xl mx-auto p-4">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
         <div>
-          <p>grid one</p>
+          <h3>Contact info</h3>
+          <ul>
+            <li><i class="icon icon-map-pin icon-padding-right icon-position"></i><a href="">Karviainen - Aura</a></li>
+            <li><i class="icon icon-phone icon-padding-right icon-position"></i><a href="">+358 41 701 6628</a></li>
+            <li><i class="icon icon-email icon-padding-right icon-position"></i><a href="">jussi.jokinen@openinnovations.io</a></li>
+          </ul>
         </div>
         <div>
-          <p>grid two</p>
+          <h3>Social media</h3>
+          <ul>
+            <li><i class="icon icon-bluesky icon-padding-right icon-position"></i><a href="">Bluesky</a></li>
+            <li><i class="icon icon-facebook icon-padding-right icon-position"></i><a href="">Facebook</a></li>
+          </ul>
         </div>
         <div>
-          <p>grid three</p>
+          <h3>Other</h3>
+          <ul>
+            <li><i class="icon icon-discord icon-padding-right icon-position"></i><a href="">Discord</a></li>
+            <li><i class="icon icon-slack icon-padding-right icon-position"></i><a href="">Slack</a></li>
+            <li style="padding-left: 56px;"><a href="">Privacy policy</a><i class="icon icon-external-link icon-padding-left icon-position"></i></li>
+          </ul>
         </div>
       </div>
     </div>
+    <div class="copyright">
+      <div class="container max-w-screen-xl mx-auto p-4">
+        <p>&copy; <a href="">Openinnovations</a> 2025. </p>
+      </div>
+    </div>
   </footer>
+
   
     <script src="static/js/bundle.js"></script>
 </body>
