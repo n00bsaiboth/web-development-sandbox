@@ -2,3 +2,5 @@ node_modules
 web/static/
 
 !web/static/images/** 
+!web/static/css/style.css
+!web/static/js/bundle.js

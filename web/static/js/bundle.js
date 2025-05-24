@@ -16,7 +16,17 @@
   \************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scss_style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../scss/style.scss */ \"./src/scss/style.scss\");\n/* harmony import */ var _modules_navigations__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/navigations */ \"./src/js/modules/navigations.js\");\n\n\n\n\ndocument.addEventListener('DOMContentLoaded', function () {\n  (0,_modules_navigations__WEBPACK_IMPORTED_MODULE_1__.toggleMenu)();\n});\nvar helloWebpack = function helloWebpack(name) {\n  console.log(\"Hello from \".concat(name, \"!\"));\n};\nhelloWebpack('Webpack and Babel');\n\n//# sourceURL=webpack://icons-to-fonts/./src/js/main.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scss_style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../scss/style.scss */ \"./src/scss/style.scss\");\n/* harmony import */ var _modules_navigations__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/navigations */ \"./src/js/modules/navigations.js\");\n/* harmony import */ var _modules_back_to_top_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/back-to-top.js */ \"./src/js/modules/back-to-top.js\");\n\n\n\n\n\ndocument.addEventListener('DOMContentLoaded', function () {\n  (0,_modules_navigations__WEBPACK_IMPORTED_MODULE_1__.toggleMenu)();\n  (0,_modules_back_to_top_js__WEBPACK_IMPORTED_MODULE_2__.backToTop)();\n});\nvar helloWebpack = function helloWebpack(name) {\n  console.log(\"Hello from \".concat(name, \"!\"));\n};\nhelloWebpack('Webpack and Babel');\n\n//# sourceURL=webpack://web-development-sandbox/./src/js/main.js?");
+
+/***/ }),
+
+/***/ "./src/js/modules/back-to-top.js":
+/*!***************************************!*\
+  !*** ./src/js/modules/back-to-top.js ***!
+  \***************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   backToTop: () => (/* binding */ backToTop)\n/* harmony export */ });\n// modules/backToTop.js\n\n\nvar backToTop = function backToTop() {\n  var button = document.getElementById(\"back-to-top-button\");\n  if (!button) return;\n\n  // Show/hide button on scroll\n  window.addEventListener(\"scroll\", function () {\n    var scrollY = window.scrollY || document.documentElement.scrollTop;\n    button.style.display = scrollY > 20 ? \"block\" : \"none\";\n  });\n\n  // Scroll to top on click\n  button.addEventListener(\"click\", function () {\n    window.scrollTo({\n      top: 0,\n      behavior: \"smooth\"\n    });\n  });\n};\n\n\n//# sourceURL=webpack://web-development-sandbox/./src/js/modules/back-to-top.js?");
 
 /***/ }),
 
@@ -26,7 +36,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scs
   \***************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   toggleMenu: () => (/* binding */ toggleMenu)\n/* harmony export */ });\n\n\nvar toggleMenu = function toggleMenu() {\n  var btn = document.querySelector('[data-collapse-toggle]');\n  var menu = document.getElementById(btn.getAttribute('data-collapse-toggle'));\n  btn.addEventListener('click', function () {\n    menu.classList.toggle('hidden');\n    btn.setAttribute('aria-expanded', menu.classList.contains('hidden') ? 'false' : 'true');\n  });\n};\n\n\n//# sourceURL=webpack://icons-to-fonts/./src/js/modules/navigations.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   toggleMenu: () => (/* binding */ toggleMenu)\n/* harmony export */ });\n\n\nvar toggleMenu = function toggleMenu() {\n  var btn = document.querySelector('[data-collapse-toggle]');\n  var menu = document.getElementById(btn.getAttribute('data-collapse-toggle'));\n  btn.addEventListener('click', function () {\n    menu.classList.toggle('hidden');\n    btn.setAttribute('aria-expanded', menu.classList.contains('hidden') ? 'false' : 'true');\n  });\n};\n\n\n//# sourceURL=webpack://web-development-sandbox/./src/js/modules/navigations.js?");
 
 /***/ }),
 
@@ -36,7 +46,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \*****************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://icons-to-fonts/./src/scss/style.scss?");
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://web-development-sandbox/./src/scss/style.scss?");
 
 /***/ })
 

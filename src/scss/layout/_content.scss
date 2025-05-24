@@ -1,0 +1,50 @@
+main {
+    #services {
+        .icon {
+            font-family: "iconfont";
+            font-style: normal;
+            display: inline-block;
+            font-size:180px;
+            color: #000;
+        }
+
+        .icon-pc-display::before {
+            content: "\f153";
+        }
+
+        .icon-headset::before {
+            content: "\f143";
+        }
+
+        .icon-code::before {
+            content: "\f116";
+        }
+
+        .computer-services,
+        .coding-services,
+        .consulting-services {
+            display: flex;
+            flex-flow: column nowrap;
+
+            a {
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: none;
+
+                    span,
+                    h3,
+                    p {
+                        text-decoration: none;
+                    }
+                }
+            }
+
+            span, h3, p {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+}
