@@ -28,14 +28,19 @@ main {
 
             a {
                 text-decoration: none;
+                @apply text-gray-900;
+                
+                .container-services {
+                    min-height: 31.25rem;
 
-                &:hover {
-                    text-decoration: none;
-
-                    span,
-                    h3,
-                    p {
+                    &:hover {
                         text-decoration: none;
+
+                        span,
+                        h3,
+                        p {
+                            text-decoration: none;
+                        }
                     }
                 }
             }

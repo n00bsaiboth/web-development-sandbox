@@ -1591,21 +1591,27 @@ main #services .computer-services a,
 main #services .coding-services a,
 main #services .consulting-services a {
   text-decoration: none;
+  color: var(--color-gray-900);
 }
-main #services .computer-services a:hover,
-main #services .coding-services a:hover,
-main #services .consulting-services a:hover {
+main #services .computer-services a .container-services,
+main #services .coding-services a .container-services,
+main #services .consulting-services a .container-services {
+  min-height: 31.25rem;
+}
+main #services .computer-services a .container-services:hover,
+main #services .coding-services a .container-services:hover,
+main #services .consulting-services a .container-services:hover {
   text-decoration: none;
 }
-main #services .computer-services a:hover span,
-main #services .computer-services a:hover h3,
-main #services .computer-services a:hover p,
-main #services .coding-services a:hover span,
-main #services .coding-services a:hover h3,
-main #services .coding-services a:hover p,
-main #services .consulting-services a:hover span,
-main #services .consulting-services a:hover h3,
-main #services .consulting-services a:hover p {
+main #services .computer-services a .container-services:hover span,
+main #services .computer-services a .container-services:hover h3,
+main #services .computer-services a .container-services:hover p,
+main #services .coding-services a .container-services:hover span,
+main #services .coding-services a .container-services:hover h3,
+main #services .coding-services a .container-services:hover p,
+main #services .consulting-services a .container-services:hover span,
+main #services .consulting-services a .container-services:hover h3,
+main #services .consulting-services a .container-services:hover p {
   text-decoration: none;
 }
 main #services .computer-services span, main #services .computer-services h3, main #services .computer-services p,
