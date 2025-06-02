@@ -1,0 +1,55 @@
+#jumbotron {
+    background-color: var(--color-red-600);
+
+    .container-jumbotron {
+        @apply py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16;
+
+        h2 {
+           @apply mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl dark:text-white;
+        }
+
+        p {
+            @apply mb-8 text-lg font-normal text-white lg:text-xl sm:px-16 lg:px-48 dark:text-white;
+        }
+
+        .readmore {
+            @apply flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0;
+
+            .jumbotron-primary-button {
+                @apply inline-flex justify-center items-center py-3 px-5 text-sm font-medium text-white bg-red-600 rounded-lg hover:bg-red-600 focus:outline-none focus:ring-4 focus:ring-white;
+                
+                a {
+                    @apply text-inherit;
+                    margin-bottom: 0;
+                }
+
+                .icon {
+                    font-family: "iconfont";
+                    font-style: normal;
+                    display: inline-block;
+                    font-size: 32px;
+                }
+
+                .icon-padding-left {
+                    padding-left: var(--grid-gutter-width);
+                }
+
+                .icon-arrow-right::after {
+                    content: "\f105";
+                }
+            }
+            
+            .jumbotron-secondary-button {
+                @apply py-3 px-5 sm:ms-4 text-sm font-medium text-white border border-white bg-transparent rounded-lg hover:bg-white hover:text-red-600 focus:outline-none focus:ring-4 focus:ring-white;
+
+                a {
+                    @apply text-inherit;
+
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}
