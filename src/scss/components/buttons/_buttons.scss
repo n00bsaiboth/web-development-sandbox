@@ -1,1 +1,27 @@
 // General buttons
+
+.general-button {
+    @apply inline-flex justify-center items-center py-3 px-5 text-sm font-medium text-gray-900 rounded-lg focus:outline-none focus:ring-4 focus:ring-white;
+    
+    a {
+        @apply text-inherit;
+        margin-bottom: 0;
+    }
+
+    .icon {
+        @apply text-gray-900;
+
+        font-family: "iconfont";
+        font-style: normal;
+        display: inline-block;
+        font-size: 32px;
+    }
+
+    .icon-padding-left {
+        padding-left: var(--grid-gutter-width);
+    }
+
+    .icon-arrow-right::after {
+        content: "\f105";
+    }
+}
