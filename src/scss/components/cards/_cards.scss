@@ -1,0 +1,5 @@
+// General cards
+
+.general-card {
+    @apply block h-full max-w-sm p-6 bg-white border border-white rounded-lg hover:shadow-sm hover:bg-gray-100;
+}
