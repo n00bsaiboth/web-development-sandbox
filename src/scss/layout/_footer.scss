@@ -81,6 +81,24 @@ footer {
         p {
             color: #fff;
             margin-bottom: 0;
+
+            .icon {
+                font-family: "iconfont";
+                font-style: normal;
+                display: inline-block;
+                color: white;
+                font-size: 32px;
+            }
+
+            .icon-position {
+                position: relative;
+                top: 8px;
+            }
+
+            .icon-copyleft::before { 
+                content: "\f119";
+            }
+
         }
     }
 }
