@@ -12,4 +12,9 @@ html {
 
 body {
     overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+html, body {
+    background-color: var(--color-white);
 }
