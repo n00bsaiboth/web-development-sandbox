@@ -39,7 +39,6 @@
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
       <div class="site-branding">
         <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
-          <!-- <img src="static/images/icons/tailwind-css.svg" class="h-8" alt="Openinnovations.io" /> -->
           <i class="icon icon-tailwind icon-padding-right"></i><span class="self-center text-2xl font-semibold whitespace-nowrap">BumbleBee.io</span>
         </a>
       </div>
@@ -51,12 +50,6 @@
         aria-expanded="false"
         >
           <span class="sr-only">Open main menu</span>
-          <!-- <img 
-            src="static/images/icons/main-menu.svg"
-            class="w-5 h-5"
-            aria-hidden="true"
-            alt="Main menu"
-          /> -->
           <i class="icon icon-main-menu" aria-hidden="true"></i>
       </button>
       <div class="hidden w-full md:block md:w-auto" id="navbar-default">
@@ -91,39 +84,66 @@
     </div>
   </header>
 
-  <!-- placeholder for breadcrumbs -->
+  
 
   <main>
+    <!-- placeholder for breadcrumbs -->
+
+  <!-- <nav id="breadcrumbs" class="flex" aria-label="Breadcrumb">
+    <div class="container max-w-screen-xl mx-auto p-4">
+      <ol class="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse">
+        <li class="inline-flex items-center">
+          <a href="#" class="inline-flex items-center text-sm font-medium text-gray-700 hover:text-blue-600 dark:text-gray-400 dark:hover:text-white">
+            <svg class="w-3 h-3 me-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+              <path d="m19.707 9.293-2-2-7-7a1 1 0 0 0-1.414 0l-7 7-2 2a1 1 0 0 0 1.414 1.414L2 10.414V18a2 2 0 0 0 2 2h3a1 1 0 0 0 1-1v-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v4a1 1 0 0 0 1 1h3a2 2 0 0 0 2-2v-7.586l.293.293a1 1 0 0 0 1.414-1.414Z"/>
+            </svg>
+            Home
+          </a>
+        </li>
+      </ol>
+    </div>
+  </nav> -->
+
+
     <section id="jumbotron">
-      <div class="bg-white dark:bg-gray-900">
-        <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16">
-            <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">Jumbotron with tailwindCSS.</h1>
-            <p class="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48 dark:text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat..</p>
-            <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
-                <a href="#" class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
+        <div class="container-jumbotron">
+            <h2>Jumbotron with tailwindCSS</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat..</p>
+            <div class="readmore">
+                <button class="jumbotron-primary-button">
+                  <a href="#">
                     Get started
-                    <svg class="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-                    </svg>
-                </a>
-                <a href="#" class="py-3 px-5 sm:ms-4 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">
+                  </a>
+                  <i class="icon icon-arrow-right icon-padding-left"></i>
+                </button>
+                <button class="jumbotron-secondary-button">
+                  <a href="#">
                     Learn more
-                </a>  
+                  </a>
+                </button>  
             </div>
         </div>
-      </div>
     </section>
 
-
     <section id="about">
-      <div class="container max-w-screen-xl mx-auto p-4">
+      <div class="container-about">
         <h2>About</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-0">
-          <div>
-            <p>image or background placeholder</p>
+        <div class="grid-2">
+          <div class="grid-left">
+            <div class="about-image-container about-image"></div>
           </div>
-          <div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla varius sollicitudin arcu, sit amet elementum felis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas a facilisis neque. Morbi fermentum eros neque, ac tincidunt erat lacinia gravida. Morbi faucibus massa ut metus lobortis pretium. Duis aliquam ante sed metus suscipit pharetra. Nullam lacinia metus vel ligula porttitor elementum. Suspendisse potenti. Ut placerat erat et eros gravida viverra. Quisque luctus, nisi aliquet sollicitudin sagittis, nisi elit pulvinar eros, nec aliquet purus orci in sem. Suspendisse facilisis a lorem et aliquam. Nulla facilisi. Pellentesque vitae volutpat metus, non consequat tellus. Vestibulum iaculis at enim sed facilisis. Nunc velit urna, condimentum aliquet pretium sed, laoreet ac mauris. Aenean mattis orci nec aliquet lobortis. </p>
+          <div class="grid-right">
+            <div class="content transform translate-x-full opacity-0 transition-all duration-700">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla varius sollicitudin arcu, sit amet elementum felis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas a facilisis neque. Morbi fermentum eros neque, ac tincidunt erat lacinia gravida. Morbi faucibus massa ut metus lobortis pretium. Duis aliquam ante sed metus suscipit pharetra. Nullam lacinia metus vel ligula porttitor elementum. Suspendisse potenti. Ut placerat erat et eros gravida viverra. Quisque luctus, nisi aliquet sollicitudin sagittis, nisi elit pulvinar eros, nec aliquet purus orci in sem. Suspendisse facilisis a lorem et aliquam. Nulla facilisi. Pellentesque vitae volutpat metus, non consequat tellus. Vestibulum iaculis at enim sed facilisis. Nunc velit urna, condimentum aliquet pretium sed, laoreet ac mauris. Aenean mattis orci nec aliquet lobortis. </p>
+              <p>
+                <button class="general-button">
+                  <a href="#">
+                    Read more
+                  </a>
+                  <i class="icon icon-arrow-right icon-padding-left"></i>
+                </button>
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -135,7 +155,7 @@
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
           <div>
             <div class="computer-services">
-              <a href="#" class="block h-full max-w-sm p-6 bg-white border border-white rounded-lg hover:shadow-sm hover:bg-gray-100">
+              <a href="#" class="general-card">
                 <div class="container-services">
                   <span class="icon icon-pc-display"></span>
                   <h3>Computer services</h3>
@@ -146,7 +166,7 @@
           </div>
           <div>
             <div class="coding-services">
-              <a href="#" class="block h-full max-w-sm p-6 bg-white border border-white rounded-lg hover:shadow-sm hover:bg-gray-100">
+              <a href="#" class="general-card">
                 <div class="container-services">
                   <span class="icon icon-code"></span>
                   <h3>Coding services</h3>
@@ -157,7 +177,7 @@
           </div>
           <div>
             <div class="consulting-services">
-              <a href="#" class="block h-full max-w-sm p-6 bg-white border border-white rounded-lg hover:shadow-sm hover:bg-gray-100">
+              <a href="#" class="general-card">
                 <div class="container-services">  
                   <span class="icon icon-headset"></span>
                   <h3>Consulting services</h3>
@@ -171,14 +191,26 @@
     </section>
 
     <section id="pricing">
-      <div class="container max-w-screen-xl mx-auto p-4">
+      <div class="container-pricing">
         <h2>Pricing</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-0">
-          <div>
-            <p>image or background placeholder</p>
+        <div class="grid-2">
+          <div class="grid-left">
+            <div class="content transform -translate-x-full opacity-0 transition-all duration-700">
+              <p>Quisque metus quam, tempor consectetur ante sed, varius auctor massa. Sed vitae risus tristique augue tincidunt tincidunt. In ut nibh malesuada, convallis tellus vel, hendrerit ex. In hac habitasse platea dictumst. Aliquam cursus vehicula dolor, non ultrices enim tincidunt non. Etiam hendrerit, quam id porttitor venenatis, ligula ipsum tincidunt tortor, at posuere est massa et sem. Morbi massa orci, molestie eu blandit vel, sodales non mauris. </p>          
+              <p>
+                <button class="general-button">
+                  <a href="#">
+                    Read more
+                  </a>
+                  <i class="icon icon-arrow-right icon-padding-left"></i>
+                </button>
+              </p>
+            </div>
           </div>
-          <div>
-            <p>Quisque metus quam, tempor consectetur ante sed, varius auctor massa. Sed vitae risus tristique augue tincidunt tincidunt. In ut nibh malesuada, convallis tellus vel, hendrerit ex. In hac habitasse platea dictumst. Aliquam cursus vehicula dolor, non ultrices enim tincidunt non. Etiam hendrerit, quam id porttitor venenatis, ligula ipsum tincidunt tortor, at posuere est massa et sem. Morbi massa orci, molestie eu blandit vel, sodales non mauris. </p>          </div>
+          <div class="grid-right">
+            <picture>
+              <img src="static/images/images/price.jpg" alt="">
+            </picture>
           </div>
         </div>
       </div>
@@ -187,7 +219,21 @@
     <section id="contact">
       <div class="container max-w-screen-xl mx-auto p-4">
         <h2>Contact</h2>
-        <p> Nam rhoncus purus sed ex ultrices commodo. Pellentesque vulputate nulla quis tincidunt condimentum. Donec commodo massa nec consequat efficitur. Etiam eu sem pulvinar, vestibulum ligula ac, tempus orci. Quisque non suscipit mauris. Vestibulum dolor ante, mollis in mauris ultricies, placerat laoreet tellus. Aliquam justo sapien, viverra sit amet molestie id, aliquet ac tortor. Suspendisse gravida tortor sit amet consectetur imperdiet. Pellentesque varius ultricies augue, ac ultrices eros semper at. Praesent faucibus sit amet elit eget mollis. Maecenas at interdum felis. Suspendisse non malesuada eros, in sodales ante. Cras quis semper sem. </p>
+        <form class="max-w-md mx-auto">
+          <div class="mb-5">
+            <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your email</label>
+            <input type="email" id="email" class="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-white dark:border-gray-300 dark:placeholder-gray-900 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="firstname.lastname@bumblebee.io" required />
+          </div>
+          <div class="mb-5">
+            <label for="subject" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Subject</label>
+            <input type="text" id="subject" class="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-white dark:border-gray-300 dark:placeholder-gray-900 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Your subject" required />
+          </div>
+          <div class="mb-5">
+            <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your message</label>
+              <textarea id="message" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-white rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-white dark:border-gray-300 dark:placeholder-gray-900 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Leave a comment..."></textarea>            
+          </div>
+          <button type="submit">Submit</button>
+        </form>
       </div>
     </section>
   </main>
@@ -222,8 +268,8 @@
       </div>
     </div>
     <div class="copyright">
-      <div class="container max-w-screen-xl mx-auto p-4">
-        <p>&copy; 2025 (and actually it's more like copyleft) <a href="#" target="_blank" rel="noreferrer noopener" title="openinnovations.io">Openinnovations</a>.</p>
+      <div class="container-copyright">
+        <p><i class="icon icon-copyleft icon-position"></i> 2025 <a href="#" target="_blank" rel="noreferrer noopener" title="openinnovations.io">Openinnovations</a>.</p>
       </div>
     </div>
   </footer>

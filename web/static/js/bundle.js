@@ -16,7 +16,17 @@
   \************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scss_style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../scss/style.scss */ \"./src/scss/style.scss\");\n/* harmony import */ var _modules_navigations__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/navigations */ \"./src/js/modules/navigations.js\");\n/* harmony import */ var _modules_back_to_top_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/back-to-top.js */ \"./src/js/modules/back-to-top.js\");\n\n\n\n\n\ndocument.addEventListener('DOMContentLoaded', function () {\n  (0,_modules_navigations__WEBPACK_IMPORTED_MODULE_1__.toggleMenu)();\n  (0,_modules_back_to_top_js__WEBPACK_IMPORTED_MODULE_2__.backToTop)();\n});\nvar helloWebpack = function helloWebpack(name) {\n  console.log(\"Hello from \".concat(name, \"!\"));\n};\nhelloWebpack('Webpack and Babel');\n\n//# sourceURL=webpack://web-development-sandbox/./src/js/main.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scss_style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../scss/style.scss */ \"./src/scss/style.scss\");\n/* harmony import */ var _modules_navigations__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/navigations */ \"./src/js/modules/navigations.js\");\n/* harmony import */ var _modules_back_to_top__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/back-to-top */ \"./src/js/modules/back-to-top.js\");\n/* harmony import */ var _modules_animateOnScroll__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/animateOnScroll */ \"./src/js/modules/animateOnScroll.js\");\n\n\n\n\n\n\ndocument.addEventListener('DOMContentLoaded', function () {\n  (0,_modules_navigations__WEBPACK_IMPORTED_MODULE_1__.toggleMenu)();\n  (0,_modules_back_to_top__WEBPACK_IMPORTED_MODULE_2__.backToTop)();\n  (0,_modules_animateOnScroll__WEBPACK_IMPORTED_MODULE_3__.animateOnScroll)();\n});\nvar helloWebpack = function helloWebpack(name) {\n  console.log(\"Hello from \".concat(name, \"!\"));\n};\nhelloWebpack('Webpack and Babel');\n\n//# sourceURL=webpack://web-development-sandbox/./src/js/main.js?");
+
+/***/ }),
+
+/***/ "./src/js/modules/animateOnScroll.js":
+/*!*******************************************!*\
+  !*** ./src/js/modules/animateOnScroll.js ***!
+  \*******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   animateOnScroll: () => (/* binding */ animateOnScroll)\n/* harmony export */ });\n\n\nvar animateOnScroll = function animateOnScroll() {\n  var observer = new IntersectionObserver(function (entries, observerInstance) {\n    entries.forEach(function (entry) {\n      if (entry.isIntersecting) {\n        var content = entry.target.querySelector(\".content\");\n        if (content) {\n          content.classList.remove(\"translate-x-full\", \"-translate-x-full\", \"opacity-0\");\n          content.classList.add(\"translate-x-0\", \"opacity-100\");\n        }\n        observerInstance.unobserve(entry.target);\n      }\n    });\n  }, {\n    threshold: 0.2\n  });\n  document.querySelectorAll(\".grid-left, .grid-right\").forEach(function (el) {\n    observer.observe(el);\n  });\n};\n\n\n//# sourceURL=webpack://web-development-sandbox/./src/js/modules/animateOnScroll.js?");
 
 /***/ }),
 
